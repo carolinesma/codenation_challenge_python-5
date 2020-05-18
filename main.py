@@ -85,7 +85,6 @@ def calc_rate(record):
             rate = FLATE_RATE + DAY_RATE * time_elapsed
 
     # calcula a taxa das ligações que começcam e terminam no período noturno
-
     elif time_elapsed and (time_start.hour >= 22) or (time_start.hour < 6):
         if (time_end.hour >= 22) or (time_end.hour < 6):
             rate = FLATE_RATE + NIGHT_RATE * time_elapsed
